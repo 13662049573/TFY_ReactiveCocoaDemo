@@ -19,6 +19,7 @@
 
     self.navigationItem.title = @"RACSignal";
     
+    self.view.backgroundColor = [UIColor whiteColor];
     /**
      RACSiganl:信号类,一般表示将来有数据传递，只要有数据改变，信号内部接收到数据，就会马上发出数据。
      信号类(RACSiganl)，只是表示当数据改变时，信号内部会发出数据，它本身不具备发送信号的能力，而是交给内部一个订阅者去发出。
@@ -91,10 +92,6 @@
     [disposable dispose];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-    
-}
+
 
 @end

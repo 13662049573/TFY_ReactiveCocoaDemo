@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
     [self initView];
     
     [self doNext];
@@ -165,10 +165,6 @@
     [[signal throttle:1] subscribeNext:^(id x) {
         NSLog(@"%@",x);
     }];
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

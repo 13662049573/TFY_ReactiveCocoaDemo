@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+     self.view.backgroundColor = [UIColor whiteColor];
     /**
      RACMulticastConnection:用于当一个信号，被多次订阅时，为了保证创建信号时，避免多次调用创建信号中的block，造成副作用，可以使用这个类处理。
      使用注意:RACMulticastConnection通过RACSignal的-publish或者-muticast:方法创建.
@@ -102,10 +102,6 @@
      订阅者二信号--
      */
     
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

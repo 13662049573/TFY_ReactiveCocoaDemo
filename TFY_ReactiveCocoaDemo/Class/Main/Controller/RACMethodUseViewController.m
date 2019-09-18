@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+     self.view.backgroundColor = [UIColor whiteColor];
     ////常见的五个宏
     //使用宏定义要单独导入 #import <RACEXTScope.h>
 
@@ -143,11 +143,6 @@
     NSLog(@"更新UI%@  %@",data,data1);
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

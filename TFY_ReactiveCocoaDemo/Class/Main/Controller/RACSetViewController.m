@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+self.view.backgroundColor = [UIColor whiteColor];
     [self tuple];
     [self array];
     [self dictionary];
@@ -117,11 +117,6 @@
     
     NSLog(@"%@",arr);
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
