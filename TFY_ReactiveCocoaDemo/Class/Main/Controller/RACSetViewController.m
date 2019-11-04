@@ -42,13 +42,13 @@ self.view.backgroundColor = [UIColor whiteColor];
     // 数组
     NSArray *arr = @[@"213",@"321",@1];
     //RAC 集合
-//    RACSequence *sequence = arr.rac_sequence;
-//    // 把集合转换成信号
-//    RACSignal *signal = sequence.signal;
-//    //订阅集合信号,内部会自动遍历所有的元素发出来
-//    [signal subscribeNext:^(id x) {
-//        NSLog(@"遍历数组%@",x);
-//    }];
+    RACSequence *sequence = arr.rac_sequence;
+    // 把集合转换成信号
+    RACSignal *signal = sequence.signal;
+    //订阅集合信号,内部会自动遍历所有的元素发出来
+    [signal subscribeNext:^(id x) {
+        NSLog(@"遍历数组%@",x);
+    }];
     //输出:
     /**
      遍历数组213
