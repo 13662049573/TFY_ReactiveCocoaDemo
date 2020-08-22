@@ -1,0 +1,1 @@
+../../../ReactiveObjC/ReactiveObjC/RACMulticastConnection+Private 2.h

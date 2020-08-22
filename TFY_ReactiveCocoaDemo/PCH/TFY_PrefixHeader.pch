@@ -10,5 +10,7 @@
 #define TFY_PrefixHeader_pch
 
 #import <ReactiveObjC.h>
+#import <TFY_LayoutCategoryHeader.h>
+#import <TFY_AutoLayout.h>
 
 #endif /* TFY_PrefixHeader_pch */

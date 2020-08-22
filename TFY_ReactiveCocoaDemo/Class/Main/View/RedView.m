@@ -9,10 +9,6 @@
 #import "RedView.h"
 
 @implementation RedView
-- (void)awakeFromNib {
-
-    [super awakeFromNib];
-}
 
 //懒加载信号
 - (RACSubject *)btnClickSignal {

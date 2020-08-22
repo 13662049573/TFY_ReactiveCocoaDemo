@@ -1,8 +1,12 @@
-source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios,'10.0'
+
 inhibit_all_warnings!
+
 target 'TFY_ReactiveCocoaDemo' do  
+
 pod 'ReactiveObjC'
+pod 'TFY_LayoutCategoryKit'
+pod 'TFY_AutoLayout'
 
 end

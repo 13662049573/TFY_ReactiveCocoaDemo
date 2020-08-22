@@ -37,14 +37,22 @@
     self.classArr = @[@"RACSignalController",@"RACSubscriberController",@"RACSetViewController",@"RACMulticastConnectionController",@"RACCommandController",@"RACMethodUseViewController",@"RACOperationMethodController",@"RACOperationMethodFilteringVC",@"RACOperationOrderController"];
     
     [self.view addSubview:self.tableView];
+    [self.tableView tfy_AutoSize:0 top:0 right:0 bottom:0];
 }
 
 - (UITableView *)tableView {
-
-    if (_tableView == nil) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64) style:UITableViewStylePlain];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.makeChain
+        .adJustedContentIOS11()
+        .showsVerticalScrollIndicator(NO)
+        .showsHorizontalScrollIndicator(NO)
+        .delegate(self).dataSource(self)
+        .backgroundColor(UIColor.whiteColor)
+        .clipsToBounds(YES).rowHeight(80);
+        if (@available(iOS 13.0, *)) {
+            _tableView.makeChain.automaticallyAdjustsScrollIndicatorInsets(NO);
+        }
     }
     return _tableView;
 }
@@ -55,12 +63,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath  {
-    static NSString *cellStr = @"cellStr";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellStr];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellStr];
-    }
-    
+    UITableViewCell *cell = [UITableViewCell tfy_cellFromCodeWithTableView:tableView];
     cell.textLabel.text = self.dataArr[indexPath.row];
     return cell;
 }
@@ -72,9 +75,6 @@
     [self.navigationController pushViewController:[classes new] animated:YES];
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end
