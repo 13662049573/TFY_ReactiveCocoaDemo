@@ -46,8 +46,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable NSDictionary <KeyType ,ObjectType>*)tfy_dictionaryWithPlistString:(NSString *)plist;
 
-+ (nullable NSDictionary *)tfy_pathForResource:(nullable NSString *)name ofType:(nullable NSString *)ext;
-
 - (nullable NSData *)tfy_plistData;
 
 - (nullable NSString *)tfy_plistString;
@@ -95,7 +93,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable ObjectType)tfy_popObjectForKey:(KeyType)aKey;
 
-- (NSDictionary <KeyType, ObjectType>*)tfy_popEntriesForKeys:(NSArray <KeyType>*)keys;
+- (NSDictionary <KeyType, ObjectType>*)popEntriesForKeys:(NSArray <KeyType>*)keys;
 
 TFY_MUTABLEDICTION_PROPERTY ( ^ addValueForKey)(ObjectType object, KeyType key);
 

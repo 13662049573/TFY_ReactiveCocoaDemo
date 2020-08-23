@@ -1,1 +1,0 @@
-../../../ReactiveObjC/ReactiveObjC/UISlider+RACSignalSupport 2.h

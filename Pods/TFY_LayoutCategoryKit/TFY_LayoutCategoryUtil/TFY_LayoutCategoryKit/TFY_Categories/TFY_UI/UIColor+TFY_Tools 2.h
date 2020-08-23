@@ -168,11 +168,11 @@ typedef NS_ENUM(NSInteger, GradientChangeDirection) {
 - (UIColor *)tfy_antiColor;
 
 @end
-/**十六进制字符串获取颜色*/
+
 CG_INLINE UIColor *TFY_ColorHexString(NSString *hexString){
     return [UIColor tfy_colorWithHexString:hexString];
 }
-/**十六进制字符串获取颜色，alpha需要自己传递*/
+
 CG_INLINE UIColor *TFY_ColorHexAlpha(NSString *hexString, CGFloat alpha){
     return [UIColor tfy_colorWithHexString:hexString alpha:alpha];
 }
@@ -193,10 +193,6 @@ CG_INLINE UIColor *TFY_ColorRGBAlphaPercent(CGFloat r, CGFloat g, CGFloat b, CGF
 /** RGB颜色传分数 */
 CG_INLINE UIColor *TFY_ColorRGBPercent(CGFloat r, CGFloat g, CGFloat b){
     return TFY_ColorRGBAlphaPercent(r,g,b,1);
-}
-/**渐变色*/
-CG_INLINE UIColor *TFY_ColorGradient(CGSize size,GradientChangeDirection direction,UIColor *starcolor,UIColor *endcolor){
-    return [UIColor tfy_colorGradientChangeWithSize:size direction:direction startColor:starcolor endColor:endcolor];
 }
 
 #define RGBAlphaPercent(r,g,b,a) UIColorRGBAlphaPercent(r,g,b,a)

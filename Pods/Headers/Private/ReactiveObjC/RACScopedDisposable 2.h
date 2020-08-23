@@ -1,1 +1,0 @@
-../../../ReactiveObjC/ReactiveObjC/RACScopedDisposable 2.h

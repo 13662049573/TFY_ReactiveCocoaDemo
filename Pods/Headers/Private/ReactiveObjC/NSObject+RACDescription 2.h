@@ -1,1 +1,0 @@
-../../../ReactiveObjC/ReactiveObjC/NSObject+RACDescription 2.h

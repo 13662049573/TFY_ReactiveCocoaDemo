@@ -1,1 +1,0 @@
-../../../ReactiveObjC/ReactiveObjC/RACChannel 2.h

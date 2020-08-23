@@ -1,1 +1,0 @@
-../../../ReactiveObjC/ReactiveObjC/RACEmptySignal 2.h
