@@ -180,7 +180,6 @@
 		75C88A824EF5D3CA6D751D42FA49442A /* RACDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5458C5A5D670391CB51BDA282B4746 /* RACDelegateProxy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		76BFAC07C7B274FC6B0A009838ABD1F5 /* TFY_ButtonChainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F63E63C64CD00CE3D0BA8307980B37E7 /* TFY_ButtonChainModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		76C80D2595CFFFB51FEE8D8A7CAD84BB /* RACScopedDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB1F186B61D03F9580851CC72F2BBDD /* RACScopedDisposable.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7717137F7D57317E27C02FAD747C6B38 /* TFY_AutoLayoutHerder 2.h in Headers */ = {isa = PBXBuildFile; fileRef = 486C7FDAA11C64C35EFEA2F7FEF6697D /* TFY_AutoLayoutHerder 2.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7724557019D4B5DB6937CAC3436773F2 /* RACSubscriber+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9FB9570B497D03BF44410F612498AA /* RACSubscriber+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7750FA30AB2921B8C4C46A4B9E95F5EE /* RACEagerSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D378F2687265DC08D31BF0DD7C6EA02 /* RACEagerSequence.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		780FE5BDFA73F87469D4B8C78F033CF8 /* NSObject+RACKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC7618CB0C10F10C6A47DA5BC137194 /* NSObject+RACKVOWrapper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -408,7 +407,7 @@
 		0134E25A79028AEC9545F71DBF57CB12 /* TFY_AutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFY_AutoLayout.release.xcconfig; sourceTree = "<group>"; };
 		0173C6FA0E65C8B61144279977956436 /* RACUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACUnit.m; path = ReactiveObjC/RACUnit.m; sourceTree = "<group>"; };
 		018153C3C7FD1AAF17AFACBAA765F4D9 /* RACMulticastConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACMulticastConnection.h; path = ReactiveObjC/RACMulticastConnection.h; sourceTree = "<group>"; };
-		02351A7424FC79B1BB48646C2911C4F5 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
+		02351A7424FC79B1BB48646C2911C4F5 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
 		02795416E36909BFBEE77DA657B4D2ED /* RACGroupedSignal 2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACGroupedSignal 2.h"; path = "ReactiveObjC/RACGroupedSignal 2.h"; sourceTree = "<group>"; };
 		02C766C80B3D516B7A7F3AA6A8D96291 /* TFY_TransFormLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_TransFormLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_TransFormLayerChainModel.h; sourceTree = "<group>"; };
 		02D713DF9C09AD2FB57B141FA46B6592 /* TFY_BaseLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_BaseLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_BaseLayerChainModel.h; sourceTree = "<group>"; };
@@ -441,7 +440,7 @@
 		18057AC78E0659BDAFB33634FFDD0509 /* RACEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTScope.h; path = ReactiveObjC/extobjc/RACEXTScope.h; sourceTree = "<group>"; };
 		1864D896E6EF2545E511E04EA7360053 /* RACEmptySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySequence.h; path = ReactiveObjC/RACEmptySequence.h; sourceTree = "<group>"; };
 		18B0B738B76A04E9BE98F7C58040C420 /* UIColor+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIColor+TFY_Tools.m"; sourceTree = "<group>"; };
-		1901CDF70D23A68CA0B9E02D2F70C422 /* libTFY_AutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_AutoLayout.a; path = libTFY_AutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1901CDF70D23A68CA0B9E02D2F70C422 /* libTFY_AutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_AutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DA76E24208572B09C64AC0A4AC2589 /* TFY_PanGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_PanGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_PanGestureChainModel.h; sourceTree = "<group>"; };
 		1A9FB9570B497D03BF44410F612498AA /* RACSubscriber+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSubscriber+Private.h"; path = "ReactiveObjC/RACSubscriber+Private.h"; sourceTree = "<group>"; };
 		1BB9CEA44F73A421EA3E197D9F489861 /* UITableView+TFY_LayoutCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+TFY_LayoutCell.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UITableView+TFY_LayoutCell.m"; sourceTree = "<group>"; };
@@ -457,7 +456,7 @@
 		1F4F2A41B976DA255030F88BD6816958 /* TFY_HandlerVideo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_HandlerVideo.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Tools/TFY_HandlerVideo.m; sourceTree = "<group>"; };
 		1F9061A089C575C33022B4BD3402B118 /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveObjC/RACStringSequence.m; sourceTree = "<group>"; };
 		1FC7618CB0C10F10C6A47DA5BC137194 /* NSObject+RACKVOWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACKVOWrapper.m"; path = "ReactiveObjC/NSObject+RACKVOWrapper.m"; sourceTree = "<group>"; };
-		1FF45DA6BD3263474314B951A5B7F5D3 /* libTFY_LayoutCategoryKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTFY_LayoutCategoryKit.a; path = libTFY_LayoutCategoryKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF45DA6BD3263474314B951A5B7F5D3 /* libTFY_LayoutCategoryKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTFY_LayoutCategoryKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2137860EF46522B9768C32AC92E33A35 /* UIActionSheet+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+RACSignalSupport.m"; path = "ReactiveObjC/UIActionSheet+RACSignalSupport.m"; sourceTree = "<group>"; };
 		2260D2FE23CC08707BD1011257CAE3EE /* NSObject+RACDeallocating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDeallocating.h"; path = "ReactiveObjC/NSObject+RACDeallocating.h"; sourceTree = "<group>"; };
 		22B4EC42E1108365F7CA9CBB9B1DF5EF /* UILabel+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UILabel+TFY_Tools.h"; sourceTree = "<group>"; };
@@ -507,7 +506,7 @@
 		3FD97F274FFA39D3A3B71BED8D29A452 /* TFY_ControlChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_ControlChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_ControlChainModel.m; sourceTree = "<group>"; };
 		3FEBC14C5636EA05D431F49650D46179 /* UIGestureRecognizer+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_UI/UIGestureRecognizer+TFY_Tools.m"; sourceTree = "<group>"; };
 		40BB83A1E732E3DE9CD1DBC58F16E20D /* UICollectionReusableView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionReusableView+RACSignalSupport.h"; path = "ReactiveObjC/UICollectionReusableView+RACSignalSupport.h"; sourceTree = "<group>"; };
-		413175A422DB6F85AAA77AA3ED9ECDE5 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
+		413175A422DB6F85AAA77AA3ED9ECDE5 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
 		41EA28A29EAB7FAC8AC7B2C3CB6DC0F5 /* TFY_ChainDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_ChainDefine.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase/TFY_ChainDefine.h; sourceTree = "<group>"; };
 		42707935452181824A94272DD8E38ACE /* TFY_AutoLayoutHerder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_AutoLayoutHerder.h; path = TFY_AutoLayout/TFY_AutoLayout/Util/TFY_AutoLayoutHerder.h; sourceTree = "<group>"; };
 		42B35E59B5B905E84DE1B41606E4636C /* TFY_BaseViewChainModel+Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TFY_BaseViewChainModel+Masonry.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseViewChainModel+Masonry.h"; sourceTree = "<group>"; };
@@ -518,7 +517,6 @@
 		447B13733EB33D4A06D9B50977492765 /* TFY_LayerChainHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_LayerChainHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_LayerChainHeader.h; sourceTree = "<group>"; };
 		45B6B7DB85B311E27FF9E188BD1406E5 /* TFY_LayoutCategoryKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFY_LayoutCategoryKit-dummy.m"; sourceTree = "<group>"; };
 		46F71175BCF54A932B4D27A73F5647AD /* UITableViewCell+TFY_AutoHeightForCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+TFY_AutoHeightForCell.h"; path = "TFY_AutoLayout/TFY_AutoLayout/IOS_Layout/UITableViewCell+TFY_AutoHeightForCell.h"; sourceTree = "<group>"; };
-		486C7FDAA11C64C35EFEA2F7FEF6697D /* TFY_AutoLayoutHerder 2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TFY_AutoLayoutHerder 2.h"; path = "TFY_AutoLayout/TFY_AutoLayout/Util/TFY_AutoLayoutHerder 2.h"; sourceTree = "<group>"; };
 		4886C961FD42494C6BDEE917CE003892 /* TFY_AutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFY_AutoLayout-dummy.m"; sourceTree = "<group>"; };
 		489A3984662901F060C43570F31AB161 /* RACEagerSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEagerSequence.h; path = ReactiveObjC/RACEagerSequence.h; sourceTree = "<group>"; };
 		4A5823263735702271945C39D12695A8 /* TFY_Define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_Define.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Define.h; sourceTree = "<group>"; };
@@ -643,7 +641,7 @@
 		957DD5AD1923E35250B045F2C24D0B97 /* RACEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEvent.m; path = ReactiveObjC/RACEvent.m; sourceTree = "<group>"; };
 		95B6333D75E658A982DAF0F57B2B856F /* RACSubscriptionScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptionScheduler.h; path = ReactiveObjC/RACSubscriptionScheduler.h; sourceTree = "<group>"; };
 		95D49F56407A2A1D6EDD5C9CF6B3FA00 /* CALayer+TFY_Chain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+TFY_Chain.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/CALayer+TFY_Chain.h"; sourceTree = "<group>"; };
-		9621C6383F5733C35183B2DE886C7EC6 /* libReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveObjC.a; path = libReactiveObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9621C6383F5733C35183B2DE886C7EC6 /* libReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		968DA0A412CC5CA7080331781F67891E /* TFY_LongPressGestureChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_LongPressGestureChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_LongPressGestureChainModel.m; sourceTree = "<group>"; };
 		968EB11BBFD136677071E7929D71D68E /* RACArraySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACArraySequence.m; path = ReactiveObjC/RACArraySequence.m; sourceTree = "<group>"; };
 		96FEC576DC773A0A16664A89B3C1CAB5 /* NSObject+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSObject+TFY_Tools.m"; sourceTree = "<group>"; };
@@ -660,14 +658,14 @@
 		9C0C69BD3A59811AFB8B0422504E09CA /* TFY_GestureChainHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_GestureChainHeader.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_GestureChainHeader.h; sourceTree = "<group>"; };
 		9C82B8EB6A40C8468D2739ED2FA12B67 /* UITableViewCell+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+RACSignalSupport.h"; path = "ReactiveObjC/UITableViewCell+RACSignalSupport.h"; sourceTree = "<group>"; };
 		9D2E506A998428731794F5D6E2FDF8DD /* TFY_DatePickerViewChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_DatePickerViewChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_DatePickerViewChainModel.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBA1853637501F42D1B3005B25A526C /* RACKVOProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOProxy.h; path = ReactiveObjC/RACKVOProxy.h; sourceTree = "<group>"; };
 		A18E353A1915EA48C3963D8039B08A88 /* TFY_BaseControlChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_BaseControlChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView/TFY_BaseControlChainModel.h; sourceTree = "<group>"; };
 		A1B5CC8C532CDD6E12792B05715BEBA2 /* TFY_RotationGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_RotationGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_RotationGestureChainModel.h; sourceTree = "<group>"; };
 		A32A586F1C90A122D2E4F325EC6605AC /* TFY_PinchGestureChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_PinchGestureChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture/TFY_PinchGestureChainModel.h; sourceTree = "<group>"; };
 		A383483FDB336CCC1E2731BE911C12D2 /* NSFileManager+TFY_Tools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+TFY_Tools.m"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSFileManager+TFY_Tools.m"; sourceTree = "<group>"; };
 		A46F6A05A3DE6AB22678DCBCE24F18DE /* TFY_EmiiterLayerChainModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFY_EmiiterLayerChainModel.h; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_EmiiterLayerChainModel.h; sourceTree = "<group>"; };
-		A4E206E00C8562B58A40259F244F8012 /* libPods-TFY_ReactiveCocoaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TFY_ReactiveCocoaDemo.a"; path = "libPods-TFY_ReactiveCocoaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E206E00C8562B58A40259F244F8012 /* libPods-TFY_ReactiveCocoaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_ReactiveCocoaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50C4CC22E68D096ED593F0166C82100 /* NSEnumerator+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEnumerator+RACSequenceAdditions.m"; path = "ReactiveObjC/NSEnumerator+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		A52FD21496EF72A01F1C0A7789BA0823 /* NSTimer+TFY_Tools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+TFY_Tools.h"; path = "TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation/NSTimer+TFY_Tools.h"; sourceTree = "<group>"; };
 		A552C6F499D67B6DD78D629965E793EA /* TFY_EmiiterLayerChainModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFY_EmiiterLayerChainModel.m; path = TFY_LayoutCategoryUtil/TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer/TFY_EmiiterLayerChainModel.m; sourceTree = "<group>"; };
@@ -883,7 +881,6 @@
 				8F90941030A8698D5EB24AE384837145 /* Support Files */,
 				F9344DABFC190C25886F93B76CF26C5C /* Util */,
 			);
-			name = TFY_AutoLayout;
 			path = TFY_AutoLayout;
 			sourceTree = "<group>";
 		};
@@ -896,7 +893,6 @@
 				D37443FE4AEEDC16C24C8C5B7366C08B /* TFY_Chain */,
 				25A5F02B650E33044E7438E678354C5E /* TFY_Tools */,
 			);
-			name = TFY_LayoutCategoryKit;
 			path = TFY_LayoutCategoryKit;
 			sourceTree = "<group>";
 		};
@@ -1131,7 +1127,6 @@
 				F9A6AECDDF63495CD116668B4BC9CA1C /* UITextView+RACSignalSupport.m */,
 				E55558455DF6F6B36CFC2F856768995D /* Support Files */,
 			);
-			name = ReactiveObjC;
 			path = ReactiveObjC;
 			sourceTree = "<group>";
 		};
@@ -1395,7 +1390,6 @@
 			isa = PBXGroup;
 			children = (
 				42707935452181824A94272DD8E38ACE /* TFY_AutoLayoutHerder.h */,
-				486C7FDAA11C64C35EFEA2F7FEF6697D /* TFY_AutoLayoutHerder 2.h */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -1515,7 +1509,6 @@
 			files = (
 				4E7E8CE73D3D7ED60C2B94D38CD6BC3E /* CALayer+TFY_Frame.h in Headers */,
 				C887323C7958ED7BB4FB23ACE7ACA1B5 /* TFY_AutoLayout.h in Headers */,
-				7717137F7D57317E27C02FAD747C6B38 /* TFY_AutoLayoutHerder 2.h in Headers */,
 				B12488FA105ADF2EFC20D7F90B986B45 /* TFY_AutoLayoutHerder.h in Headers */,
 				3BF1A7B76FA44402B3B25954DAA50594 /* UILayoutGuide+TFY_AutoLayout.h in Headers */,
 				3DF116E5B63FFFC22E3D92A397ECF375 /* UITableViewCell+TFY_AutoHeightForCell.h in Headers */,
