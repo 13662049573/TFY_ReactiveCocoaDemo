@@ -1,1 +1,0 @@
-../../../ReactiveObjC/ReactiveObjC/RACGroupedSignal 2.h

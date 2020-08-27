@@ -8,5 +8,6 @@ target 'TFY_ReactiveCocoaDemo' do
 pod 'ReactiveObjC'
 pod 'TFY_LayoutCategoryKit'
 pod 'TFY_AutoLayout'
+pod 'TFY_Navigation'
 
 end
