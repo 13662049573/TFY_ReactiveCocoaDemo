@@ -1,1 +1,0 @@
-../../../ReactiveObjC/ReactiveObjC/RACStringSequence 2.h
