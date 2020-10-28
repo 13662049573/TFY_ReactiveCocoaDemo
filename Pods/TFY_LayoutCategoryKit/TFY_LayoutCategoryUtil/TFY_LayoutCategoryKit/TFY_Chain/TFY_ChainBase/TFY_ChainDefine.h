@@ -11,7 +11,7 @@
 
 #import <UIKit/UIKit.h>
 #import <objc/message.h>
-
+////动画处理
 #define TFY_TansactionDisableActions(...)\
         [CATransaction begin];\
         [CATransaction setDisableActions:YES];\
@@ -19,24 +19,39 @@
         [CATransaction commit];
 
 #pragma mark-------------------------------------------属性对象---------------------------------------------
-//copy
-#define TFY_CATEGORY_CHAIN_PROPERTY @property (nonatomic, copy, readonly)
-//strong
-#define TFY_CATEGORY_STRONG_PROPERTY @property (nonatomic, strong, readonly)
 
-//copy category
-#define TFY_PROPERTY_CHAIN @property (nonatomic, copy)
-//strong
-#define TFY_PROPERTY_STRONG @property (nonatomic, strong)
-/**BLOCK*/
-#define TFY_PROPERTY_CHAIN_BLOCK @property (nonatomic, copy, nullable)
-/**assign*/
-#define TFY_PROPERTY_ASSIGN @property(nonatomic , assign)
-/** weak*/
-#define TFY_PROPERTY_WEAK @property(nonatomic , weak)
+#define TFY_PROPERTY_CHAIN_READONLY          @property (nonatomic , copy , readonly)
+#define TFY_PROPERTY_STRONG_READONLY         @property (nonatomic , strong , readonly)
+#define TFY_PROPERTY_ASSIGN_READONLY         @property (nonatomic , assign , readonly)
+
+#pragma mark -------------------------------------------属性快速声明-------------------------------------------
+
+#define TFY_PROPERTY_CHAIN                    @property (nonatomic , copy)
+#define TFY_PROPERTY_STRONG                   @property (nonatomic , strong)
+#define TFY_PROPERTY_ASSIGN                   @property (nonatomic , assign)
+#define TFY_PROPERTY_WEAK                     @property (nonatomic , weak)
+#define TFY_PROPERTY_CHAIN_BLOCK(name,...)    @property (nonatomic , copy, nullable) void (^name)(__VA_ARGS__)
+
+#define TFY_PROPERTY_BOOL(name)                TFY_PROPERTY_ASSIGN BOOL                  name
+#define TFY_PROPERTY_NSString(name)            TFY_PROPERTY_CHAIN  NSString            * name
+#define TFY_PROPERTY_NSUInteger(name)          TFY_PROPERTY_ASSIGN NSUInteger            name
+#define TFY_PROPERTY_NSInteger(name)           TFY_PROPERTY_ASSIGN NSInteger             name
+#define TFY_PROPERTY_Float(name)               TFY_PROPERTY_ASSIGN float                 name
+#define TFY_PROPERTY_LongLong(name)            TFY_PROPERTY_ASSIGN long long             name
+#define TFY_PROPERTY_NSDictionary(name)        TFY_PROPERTY_STRONG NSDictionary        * name
+#define TFY_PROPERTY_NSArray(name)             TFY_PROPERTY_CHAIN  NSArray * name
+#define TFY_PROPERTY_NSMutableArray(name)      TFY_PROPERTY_STRONG NSMutableArray      * name
+#define TFY_PROPERTY_NSData(name)              TFY_PROPERTY_STRONG NSData * name
+#define TFY_PROPERTY_NSMutableDictionary(name) TFY_PROPERTY_STRONG NSMutableDictionary * name
+
+/**快捷创建对象属性 如 (Label) (name)*/
+#define TFY_PROPERTY_OBJECT_STRONG(object,name)  TFY_PROPERTY_STRONG object  * name
+#define TFY_PROPERTY_OBJECT_CHAIN(object,name)   TFY_PROPERTY_CHAIN  object  * name
+#define TFY_PROPERTY_OBJECT_ASSIGN(object,name)  TFY_PROPERTY_ASSIGN object    name
+#define TFY_PROPERTY_OBJECT_WEAK(object,name)    TFY_PROPERTY_WEAK   object    name
 
 /**点语法*/
-#pragma mark-------------------------------------------点语法---------------------------------------------
+#pragma mark-------------------------------------------点语法链式编程---------------------------------------------
 
 #define TFY_CATEGORY_CHAIN_IMPLEMENTATION(TFY_Method,TFY_ParaType, TFY_ModelType, TFY_PropertyClass)\
 - (TFY_ModelType  _Nonnull (^)(TFY_ParaType))TFY_Method {\
@@ -74,7 +89,7 @@ CG_INLINE ModelType * TFY_Class##ModelWithArray(NSArray <TFY_Class *>*objects)\
 
 #define TFY_CATEGORY_EXINTERFACE_(TFY_Class, ModelType)\
 @interface TFY_Class(EXT)\
-    TFY_CATEGORY_CHAIN_PROPERTY ModelType * makeChain;\
+TFY_PROPERTY_CHAIN_READONLY ModelType * makeChain;\
 @end
 
 

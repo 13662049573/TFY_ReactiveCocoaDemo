@@ -39,6 +39,16 @@ TFY_CATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(lineBreakMode, NSLineBreakMode)
 TFY_CATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(adjustsFontSizeToFitWidth, BOOL)
 TFY_CATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(baselineAdjustment, UIBaselineAdjustment)
 
+
+- (TFY_ButtonChainModel * _Nonnull (^)(UIControlContentHorizontalAlignment))contentHorizontalAlignment{
+    return ^ (UIControlContentHorizontalAlignment alignment){
+        [self enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj) {
+            obj.contentHorizontalAlignment = alignment;
+        }];
+        return self;
+    };
+}
+
 - (TFY_ButtonChainModel * _Nonnull (^)(UIImage * _Nonnull, UIControlState))image{
     return ^ (UIImage *image, UIControlState state){
         [self enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj) {
@@ -122,6 +132,27 @@ TFY_CATEGORY_CHAIN_BUTTONLABEL_IMPLEMENTATION(baselineAdjustment, UIBaselineAdju
         return self;
     };
 }
+
+- (TFY_ButtonChainModel * _Nonnull (^)(ButtonLimitTimesTapBlock _Nonnull))buttonTapTime{
+    return ^ (ButtonLimitTimesTapBlock block){
+        if (block) {
+            [self enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj) {
+                obj.tfy_buttonTapTime(block);
+            }];
+        }
+        return self;
+    };
+}
+
+- (TFY_ButtonChainModel * _Nonnull (^)(NSTimeInterval))tapSpaceTime{
+    return ^ (NSTimeInterval spaceTime){
+        [self enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj) {
+            obj.tfy_tapSpaceTime(spaceTime);
+        }];
+        return self;
+    };
+}
+
 @end
 TFY_CATEGORY_VIEW_IMPLEMENTATION(UIButton, TFY_ButtonChainModel)
 #undef TFY_CATEGORY_CHAIN_BUTTON_IMPLEMENTATION
