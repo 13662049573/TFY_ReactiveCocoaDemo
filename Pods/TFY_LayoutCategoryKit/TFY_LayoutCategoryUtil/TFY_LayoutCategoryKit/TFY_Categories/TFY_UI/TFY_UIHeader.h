@@ -21,5 +21,9 @@
 #import "UITableView+TFY_LayoutCell.h"
 #import "UITableViewCell+TFY_Chain.h"
 #import "UITextView+TFY_Tools.h"
+#import "CALayer+TFY_Tools.h"
+#import "UIColor+iOS13DarkMode.h"
+#import "UIImage+iOS13DarkMode.h"
+#import "UIView+EdgeAnimation.h" //给边际添加圆弧
 
 #endif /* TFY_UIHeader_h */

@@ -1,13 +1,14 @@
 
-platform :ios,'10.0'
+platform :ios,'12.0'
 
 inhibit_all_warnings!
 
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'TFY_ReactiveCocoaDemo' do  
 
-pod 'ReactiveObjC'
+pod 'ReactiveObjC-bm'
 pod 'TFY_LayoutCategoryKit'
 pod 'TFY_AutoLayout'
-pod 'TFY_Navigation'
 
 end

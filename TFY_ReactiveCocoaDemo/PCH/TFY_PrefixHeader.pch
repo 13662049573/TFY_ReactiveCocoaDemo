@@ -9,7 +9,7 @@
 #ifndef TFY_PrefixHeader_pch
 #define TFY_PrefixHeader_pch
 
-#import <ReactiveObjC.h>
+#import <ReactiveObjC-bm/ReactiveObjC.h>
 #import <TFY_LayoutCategoryKit.h>
 #import <TFY_AutoLayout.h>
 

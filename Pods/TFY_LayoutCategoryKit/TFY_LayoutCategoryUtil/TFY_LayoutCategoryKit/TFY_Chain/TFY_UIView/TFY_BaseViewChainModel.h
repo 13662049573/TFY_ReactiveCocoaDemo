@@ -81,7 +81,7 @@ TFY_PROPERTY_CHAIN_READONLY CGPoint (^ convertPointFrom) (CGPoint, UIView *);
 TFY_PROPERTY_CHAIN_READONLY UIView *(^ viewWithTag) (NSInteger);
 
 #pragma mark - show -
-
+///背景颜色设置
 TFY_PROPERTY_CHAIN_READONLY ObjectType (^ backgroundColor) (UIColor *);
 
 TFY_PROPERTY_CHAIN_READONLY ObjectType (^ tintColor) (UIColor *);
@@ -110,6 +110,10 @@ TFY_PROPERTY_CHAIN_READONLY ObjectType (^ autoresizesSubviews) (BOOL);
 TFY_PROPERTY_CHAIN_READONLY ObjectType (^ makeTag) (NSInteger);
 
 TFY_PROPERTY_CHAIN_READONLY ObjectType (^ clipRadius) (CornerClipType,CGFloat);
+/**暗黑设置*/
+TFY_PROPERTY_CHAIN_READONLY ObjectType (^ ios13BackgroundColor) (UIColor *);
+TFY_PROPERTY_CHAIN_READONLY ObjectType (^ ios13BorderColor) (UIColor *);
+TFY_PROPERTY_CHAIN_READONLY ObjectType (^ ios13ShadowColor) (UIColor *);
 
 #pragma mark - control -
 

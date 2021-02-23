@@ -16,6 +16,29 @@
 
 #pragma mark-------------------------------------------线程---------------------------------------------
 /***线程****/
+
+NS_INLINE void TFY_GCD_QUEUE_ASYNC(dispatch_block_t _Nonnull block) {
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(queue)) == 0) {
+        block();
+    }else{
+        dispatch_async(queue, block);
+    }
+}
+
+NS_INLINE void TFY_GCD_QUEUE_MAIN(dispatch_block_t _Nonnull block) {
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(queue)) == 0) {
+        block();
+    }else{
+        if ([[NSThread currentThread] isMainThread]) {
+            dispatch_async(queue, block);
+        }else{
+            dispatch_sync(queue, block);
+        }
+    }
+}
+
 #define TFY_queueGlobalStart dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 // 当所有队列执行完成之后
 #define TFY_group_notify dispatch_group_notify(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -46,13 +69,16 @@
 #define TFY_semaphoreEnd  });
 
 
+/**
+*  完美解决Xcode NSLog打印不全的宏
+*/
 #ifdef DEBUG
 
-#define NSLog(FORMAT, ...) fprintf(stderr, "\n\n******(class)%s(begin)******\n(SEL)%s\n(line)%d\n(data)%s\n******(class)%s(end)******\n\n", [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String], __FUNCTION__, __LINE__, [[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String], [[[NSString stringWithUTF8String: __FILE__] lastPathComponent] UTF8String])
+#define NSLog(format, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
 
 #else
 
-#define NSLog(FORMAT, ...) nil
+#define NSLog(format, ...)
 
 #endif
 
@@ -164,6 +190,9 @@ static class *sharedInstance_; \
 
 #define TFY_STRONG  __strong typeof(weakSelf)self = weakSelf;
 
+/** weak对象 */
+#define TFY_Weak(o) __weak typeof(o) weak_##o = o;
+
 #pragma mark-------------------------------------------内联函数---------------------------------------------
 
 /** 发送通知 */
@@ -207,6 +236,50 @@ CG_INLINE CGFloat kNavigationBarHeight() {
     return bar.isHidden?0:bar.height + kStatusBarHeight();
 }
 
+//获取最适合的控制器
+CG_INLINE UIViewController *TFY_getTheLatestViewController(UIViewController *vc) {
+    if (vc.presentedViewController == nil) {return vc;}
+    return TFY_getTheLatestViewController(vc.presentedViewController);
+}
+
+CG_INLINE UIWindow *TFY_LastWindow() {
+    NSEnumerator  *frontToBackWindows = [[TFY_Scene defaultPackage].windows reverseObjectEnumerator];
+    for (UIWindow *window in frontToBackWindows) {
+        BOOL windowOnMainScreen = window.screen == UIScreen.mainScreen;
+        BOOL windowIsVisible = !window.hidden && window.alpha>0;
+        BOOL windowLevelSupported = (window.windowLevel >= UIWindowLevelNormal && window.windowLevel <= UIWindowLevelNormal);
+        BOOL windowKeyWindow = window.isKeyWindow;
+        if (windowOnMainScreen && windowIsVisible && windowLevelSupported && windowKeyWindow) {return window;}
+    }
+    return [UIApplication tfy_keyWindow];
+}
+
+//最上层容器
+CG_INLINE UIViewController *TFY_RootpresentMenuView() {
+    UIViewController *rootVC = TFY_getTheLatestViewController(TFY_LastWindow().rootViewController);
+    return rootVC;
+}
+
+//跳转指定控制器
+CG_INLINE void TFY_PopToViewController(UIViewController *vc) {
+    for(UIViewController * tempvc in [UIApplication currentTopViewController].navigationController.childViewControllers){
+       if([tempvc isKindOfClass:vc.class]){
+          [[UIApplication currentTopViewController].navigationController popToViewController:tempvc animated:true];
+       }
+    }
+}
+
+//返回更控制器
+CG_INLINE void TFY_DismissViewController(UIViewController *vc){
+    UIViewController * tempvc = vc.presentingViewController;
+    while (tempvc.presentingViewController) {
+        tempvc = tempvc.presentingViewController;
+        if([tempvc isKindOfClass:[UIViewController class]]){break;}
+    }
+    [tempvc dismissViewControllerAnimated:true completion:nil];
+}
+
+//方法和类交互
 CG_INLINE void TFY_Method_exchangeImp(Class _class, SEL _originSelector, SEL _newSelector) {
     Method oriMethod = class_getInstanceMethod(_class, _originSelector);
     Method newMethod = class_getInstanceMethod(_class, _newSelector);

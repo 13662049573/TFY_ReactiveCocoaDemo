@@ -1,9 +1,10 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ReactiveObjC" "${PODS_ROOT}/Headers/Public/TFY_AutoLayout" "${PODS_ROOT}/Headers/Public/TFY_LayoutCategoryKit" "${PODS_ROOT}/Headers/Public/TFY_Navigation" $(SDKROOT)/usr/include
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_AutoLayout" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_LayoutCategoryKit" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_Navigation"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ReactiveObjC" -isystem "${PODS_ROOT}/Headers/Public/TFY_AutoLayout" -isystem "${PODS_ROOT}/Headers/Public/TFY_LayoutCategoryKit" -isystem "${PODS_ROOT}/Headers/Public/TFY_Navigation"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"ReactiveObjC" -l"TFY_AutoLayout" -l"TFY_LayoutCategoryKit" -l"TFY_Navigation" -framework "Foundation" -framework "UIKit"
+ENABLE_STRICT_OBJC_MSGSEND = NO
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 NDEBUG=1 _DEBUG_TAG_
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ReactiveObjC-bm" "${PODS_ROOT}/Headers/Public/TFY_AutoLayout" "${PODS_ROOT}/Headers/Public/TFY_LayoutCategoryKit" $(SDKROOT)/usr/include
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveObjC-bm" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_AutoLayout" "${PODS_CONFIGURATION_BUILD_DIR}/TFY_LayoutCategoryKit"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ReactiveObjC-bm" -isystem "${PODS_ROOT}/Headers/Public/TFY_AutoLayout" -isystem "${PODS_ROOT}/Headers/Public/TFY_LayoutCategoryKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ReactiveObjC-bm" -l"TFY_AutoLayout" -l"TFY_LayoutCategoryKit" -framework "Foundation" -framework "UIKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -1,72 +1,65 @@
 PODS:
-  - ReactiveObjC (3.1.1)
-  - TFY_AutoLayout (2.6.2):
-    - TFY_AutoLayout/IOS_Layout (= 2.6.2)
-    - TFY_AutoLayout/MAC_Layout (= 2.6.2)
-    - TFY_AutoLayout/Util (= 2.6.2)
-  - TFY_AutoLayout/IOS_Layout (2.6.2):
+  - ReactiveObjC-bm (3.1.1.1)
+  - TFY_AutoLayout (2.6.4):
+    - TFY_AutoLayout/IOS_Layout (= 2.6.4)
+    - TFY_AutoLayout/MAC_Layout (= 2.6.4)
+    - TFY_AutoLayout/Util (= 2.6.4)
+  - TFY_AutoLayout/IOS_Layout (2.6.4):
     - TFY_AutoLayout/Util
-  - TFY_AutoLayout/MAC_Layout (2.6.2):
+  - TFY_AutoLayout/MAC_Layout (2.6.4):
     - TFY_AutoLayout/Util
-  - TFY_AutoLayout/Util (2.6.2)
-  - TFY_LayoutCategoryKit (1.6.2):
-    - TFY_LayoutCategoryKit/TFY_Categories (= 1.6.2)
-    - TFY_LayoutCategoryKit/TFY_Chain (= 1.6.2)
-    - TFY_LayoutCategoryKit/TFY_Tools (= 1.6.2)
-  - TFY_LayoutCategoryKit/TFY_Categories (1.6.2):
-    - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation (= 1.6.2)
-    - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI (= 1.6.2)
+  - TFY_AutoLayout/Util (2.6.4)
+  - TFY_LayoutCategoryKit (1.8.8):
+    - TFY_LayoutCategoryKit/TFY_Categories (= 1.8.8)
+    - TFY_LayoutCategoryKit/TFY_Chain (= 1.8.8)
+    - TFY_LayoutCategoryKit/TFY_Tools (= 1.8.8)
+  - TFY_LayoutCategoryKit/TFY_Categories (1.8.8):
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_BadgeView (= 1.8.8)
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation (= 1.8.8)
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI (= 1.8.8)
     - TFY_LayoutCategoryKit/TFY_Tools
-  - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation (1.6.2):
+  - TFY_LayoutCategoryKit/TFY_Categories/TFY_BadgeView (1.8.8):
     - TFY_LayoutCategoryKit/TFY_Tools
-  - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI (1.6.2):
+  - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation (1.8.8):
     - TFY_LayoutCategoryKit/TFY_Tools
-  - TFY_LayoutCategoryKit/TFY_Chain (1.6.2):
-    - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer (= 1.6.2)
-    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase (= 1.6.2)
-    - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture (= 1.6.2)
-    - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView (= 1.6.2)
-  - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer (1.6.2):
-    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase
-  - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase (1.6.2)
-  - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture (1.6.2):
+  - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI (1.8.8):
+    - TFY_LayoutCategoryKit/TFY_Tools
+  - TFY_LayoutCategoryKit/TFY_Chain (1.8.8):
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer (= 1.8.8)
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase (= 1.8.8)
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture (= 1.8.8)
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView (= 1.8.8)
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer (1.8.8):
     - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI
     - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase
-  - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView (1.6.2):
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase (1.8.8)
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture (1.8.8):
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView (1.8.8):
     - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation
     - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI
     - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer
     - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase
     - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture
-  - TFY_LayoutCategoryKit/TFY_Tools (1.6.2)
-  - TFY_Navigation (2.4.6):
-    - TFY_Navigation/TFY_NavControoler (= 2.4.6)
-    - TFY_Navigation/TFY_PageController (= 2.4.6)
-    - TFY_Navigation/TFY_PopController (= 2.4.6)
-  - TFY_Navigation/TFY_NavControoler (2.4.6):
-    - TFY_Navigation/TFY_PopController
-  - TFY_Navigation/TFY_PageController (2.4.6)
-  - TFY_Navigation/TFY_PopController (2.4.6)
+  - TFY_LayoutCategoryKit/TFY_Tools (1.8.8)
 
 DEPENDENCIES:
-  - ReactiveObjC
+  - ReactiveObjC-bm
   - TFY_AutoLayout
   - TFY_LayoutCategoryKit
-  - TFY_Navigation
 
 SPEC REPOS:
-  trunk:
-    - ReactiveObjC
+  https://github.com/CocoaPods/Specs.git:
+    - ReactiveObjC-bm
     - TFY_AutoLayout
     - TFY_LayoutCategoryKit
-    - TFY_Navigation
 
 SPEC CHECKSUMS:
-  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  TFY_AutoLayout: 03085c3744020215142df50ee24e9629eb967779
-  TFY_LayoutCategoryKit: d909bfa34d8d456dc4d7a65ad0347e33899188bd
-  TFY_Navigation: 83c758e1b0167be60abd687a2d980a9ac869737a
+  ReactiveObjC-bm: 3d321416bd97362e467dd30794d8032a499476b8
+  TFY_AutoLayout: 51019bdcdb78b9a145bd0ed351d23be93379dc0b
+  TFY_LayoutCategoryKit: e428704d3fd30900e203f20fd963b3c216810ba2
 
-PODFILE CHECKSUM: b98383164e38ca8080677b1c3f6d0e540c1defe4
+PODFILE CHECKSUM: 67102e497e59a5edfd99eb1622eb6365343def69
 
-COCOAPODS: 1.10.0.rc.1
+COCOAPODS: 1.10.1
